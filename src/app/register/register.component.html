@@ -1,0 +1,48 @@
+<div class="user-main-logo">
+    <img src="/assets/images/original-logo.png" alt="">
+</div>
+<div class="login-container">
+    <div class="login-header">
+        <div class="header-image">
+            <img src="/assets/images/login.png" alt="">
+        </div>
+
+        <h1 class="header-title text-center">
+            Welcome to <b>PrimeShopper</b>
+        </h1>
+    </div>
+    
+    <form autocomplete="off" #registerForm="ngForm" (ngSubmit)="register(registerForm.value)">
+        <div class="input app-input">
+            <label for="email">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" ngModel/>
+        </div>
+        <div class="input app-input">
+            <label for="email">UserName</label>
+            <input type="text" name="username" id="username" placeholder="Enter user name" ngModel/>
+        </div>
+        <div class="input app-input">
+            <label for="password">Email</label>
+            <input type="text" name="email" id="email" placeholder="Enter Your Email" ngModel/>
+        </div>
+
+        <div class="input app-input">
+            <label for="email">Phone</label>
+            <input type="text" name="phoneNumber" id="phone" placeholder="Enter Phone Number" ngModel/>
+        </div>
+
+        <div class="input app-input">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="password" ngModel/>
+        </div>
+
+        <Input type="submit" class="button app-login-button" value="Register">
+    </form>
+
+    <div class="footer">
+        <p class="text text-center">
+            already have an account?
+            <a routerLink="/login" class="text link">Login!</a>
+        </p>
+    </div>
+</div>
